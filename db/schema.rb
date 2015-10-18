@@ -18,7 +18,7 @@ ActiveRecord::Schema.define(version: 20151018194733) do
 
   create_table "characters", force: :cascade do |t|
     t.string   "name"
-    t.string   "class"
+    t.string   "class_type"
     t.string   "race"
     t.datetime "created_at"
     t.datetime "updated_at"
