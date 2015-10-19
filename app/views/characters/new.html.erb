@@ -8,12 +8,12 @@ New Character Form
   
   <p>
     <%= f.label :class_type %> <br>
-	<%= f.text_field :class_type %> 
+	<%= f.select :class_type, ["Cleric", "Fighter", "Rogue", "Wizard"] %> 
   </p>
   
   <p>
     <%= f.label :race %> <br>
-	<%= f.text_field :race %> 
+	<%= f.select :race, ["Elf", "Dwarf", "Halfling", "Human"] %> 
   </p>
   
   <p>
