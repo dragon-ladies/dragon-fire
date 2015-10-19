@@ -1,7 +1,27 @@
+
 <div class="container">
 
-<h2>New Character Form</h2>
+  <h2>New Character Form</h2>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dapibus, sapien eget venenatis consequat, ante magna tempor diam, ut lobortis ex ligula non ligula. Cras eu pretium lectus, ut tincidunt mauris. Nulla facilisi. Praesent consectetur eros non erat egestas, id placerat metus congue. Sed ac dolor quis velit ornare cursus a sit amet purus. Nunc hendrerit odio diam, vitae tincidunt eros placerat vel. Sed porttitor mi viverra justo tempus, rutrum auctor sapien pharetra. Proin pellentesque justo sit amet mi accumsan gravida. Nullam volutpat leo et mollis pellentesque. Aliquam sed ipsum ut massa rutrum tincidunt.</p>
+  <%= form_for @character do |f| %>
+    <p>
+      <%= f.label :name %> <br>
+  	<%= f.text_field :name %> 
+    </p>
+    
+    <p>
+      <%= f.label :class_type %> <br>
+  	<%= f.select :class_type, ["Cleric", "Fighter", "Rogue", "Wizard"] %> 
+    </p>
+    
+    <p>
+      <%= f.label :race %> <br>
+  	<%= f.select :race, ["Elf", "Dwarf", "Halfling", "Human"] %> 
+    </p>
+    
+    <p>
+      <%= f.submit %>
+    </p>
+  <% end %>
 
 </div>
