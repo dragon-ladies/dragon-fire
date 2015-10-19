@@ -1,0 +1,36 @@
+body {
+  background-color: #CBCBCB;
+}
+
+/* links */
+
+.btn-dd{
+  background-color: #CB5633;
+  border-radius: 50px;
+  margin-bottom: 20px;
+}
+
+a.btn-dd {
+color: #000;
+font-weight: bold;
+}
+
+
+/* Type */
+
+p {
+  line-height: 1.2em;
+}
+
+ul {
+color: red;
+font-weight: bold;
+}
+
+h2 {
+  color: #757F7C;
+}
+
+h3 {}
+
+h4 {}
