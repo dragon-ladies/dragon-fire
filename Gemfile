@@ -47,3 +47,6 @@ end
 
 # Use Heroku for deploy
 gem 'rails_12factor', group: :production
+
+# Timezone info for windows computers
+gem 'tzinfo-data'
