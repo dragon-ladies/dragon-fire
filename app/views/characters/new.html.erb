@@ -1,1 +1,22 @@
 New Character Form
+
+<%= form_for @character do |f| %>
+  <p>
+    <%= f.label :name %> <br>
+	<%= f.text_field :name %> 
+  </p>
+  
+  <p>
+    <%= f.label :class_type %> <br>
+	<%= f.text_field :class_type %> 
+  </p>
+  
+  <p>
+    <%= f.label :race %> <br>
+	<%= f.text_field :race %> 
+  </p>
+  
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
